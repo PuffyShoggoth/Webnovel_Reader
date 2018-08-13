@@ -69,7 +69,7 @@ public class ScrollingActivity extends AppCompatActivity {
                 // Connect to the web site
                 Document document = Jsoup.connect(url).get();
                 // Get the html document title
-                text = document.html();
+                text = WWTextGetter.getText(document);
             } catch (Exception e) {
                 e.printStackTrace();
             }
